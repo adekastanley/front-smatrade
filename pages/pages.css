@@ -1,0 +1,594 @@
+/* desktop view  */
+
+body {
+  background-color: #090319;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .about-header .image-container {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 768px) /* and (max-device-width: 1024px) */ /* and (orientation: portrait) */ {
+  .image-container {
+    position: absolute;
+    top: 10rem;
+    left: 50rem;
+    height: 80rem;
+    padding-left: 10rem;
+  }
+  header {
+    height: 30rem;
+    position: relative;
+  }
+  .about-header .image-container {
+    /* display: block;
+    width: 30rem; */
+  }
+  .text-container {
+    position: absolute;
+    bottom: 10rem;
+  }
+  .text-container h3,
+  button {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    /* left: 4rem; */
+  }
+
+  /* section 2 view for desktop  */
+  /* .about-header {
+  } */
+  .image-container {
+    width: 30rem;
+    height: 40rem;
+    position: relative;
+    top: 15rem;
+    left: 25rem;
+  }
+  .about-section-2 {
+    height: 45rem;
+  }
+  .about-section-2 .row {
+    padding: 2rem 6rem;
+  }
+  .about-section-2 h3 {
+    font-size: 500%;
+    font-weight: bold;
+  }
+  .about-section-2 p {
+    width: 40%;
+    text-align: start;
+    font-size: 25px;
+    font-weight: 300;
+    color: black;
+  }
+  /* section 3 desktop view  */
+  .about-section-3 .row {
+    padding: 2rem 6rem;
+  }
+  .about-section-3 h3 {
+    font-size: 300%;
+  }
+  .about-section-3 p {
+    font-size: 150%;
+  }
+
+  /* services page styles for desktop view below  */
+
+  .block1 h3 {
+    font-weight: bold;
+    font-size: 50px;
+    width: 20rem;
+  }
+
+  .services-header {
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+  }
+
+  .service-section-3 .service-card-container {
+    padding: 5rem;
+  }
+
+  .items img {
+    width: 2rem;
+  }
+  .arrows {
+    width: 4rem;
+    padding: 1rem;
+  }
+
+  /* 
+  *
+  * market page css for desktop view
+  * 
+  */
+  .market-header {
+    height: 20rem;
+  }
+
+  /* *
+* signup page css
+* */
+  .signup-wrapper {
+    bottom: 20rem;
+  }
+  .signup-section-2 {
+    padding: 14rem;
+  }
+  .signup-section-2 .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .signup-card {
+    margin: 2rem 0;
+    margin-left: 8rem;
+    padding: 4rem;
+  }
+  .signup-section-2 .signup-card img {
+    left: 90%;
+    bottom: 3rem;
+    width: 1rem;
+  }
+
+  /* *
+* login page css
+* */
+  .logincompimg {
+    position: absolute;
+    width: 60rem;
+    z-index: -1;
+    right: 12rem;
+    bottom: 2rem;
+  }
+  .loginphoneimg {
+    position: absolute;
+    width: 20rem;
+    z-index: -1;
+    right: 25rem;
+    bottom: 3rem;
+  }
+}
+/* media query for desktop ends above  */
+
+/* ***
+*
+* 
+*
+* ***/
+
+/* for mobile view  */
+@media only screen and (max-device-width: 768px) /* and (max-device-width: 1024px) */ /* and (orientation: portrait) */ {
+  header {
+    height: 25rem;
+  }
+  .image-container {
+    display: none;
+  }
+  .text-container {
+    height: 20rem;
+  }
+  .image-container img {
+    display: none;
+  }
+  .text-container .text-light {
+    font-size: 40px;
+    padding-top: 6rem;
+  }
+
+  /* section 2 mobile styles  */
+  .icon-div img {
+    width: 1rem;
+  }
+  /* .icon-div ul {
+  }
+  .icon-div ul li {
+  } */
+  .icon-div ul span {
+    font-size: 10px;
+  }
+  .about-section-2 {
+    height: 25rem;
+  }
+  .about-section-2 h3 {
+    font-size: 300%;
+  }
+  .about-section-2 p {
+    width: 100%;
+    color: black;
+  }
+
+  /* section 3 desktop view  */
+  /* .section-3 {
+   
+  } */
+  .about-section-3 h3 {
+    font-size: 200%;
+  }
+  .about-section-3 p {
+    font-size: 50%;
+    text-align: left;
+  }
+
+  /* 
+  *
+  * sevices page css for mobile view
+  * 
+  */
+  /* tab view for about page  */
+  @media only screen and (max-device-width: 768px) {
+  }
+
+  /* services page  */
+  .services-header {
+    background-size: cover;
+    background-attachment: scroll;
+    padding-bottom: 11rem;
+    height: 5rem;
+  }
+
+  .service-section-3 .service-card-container {
+    padding: 1rem;
+  }
+  .block1 h3 {
+    font-weight: bold;
+    font-size: 50px;
+    width: 100%;
+  }
+
+  .items img {
+    width: 1rem;
+  }
+  .arrows {
+    width: 3rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* 
+  *
+  * market page css for mobile view
+  * 
+  */
+  .market-header {
+    height: 10rem;
+  }
+  .market-section-2 h3 {
+    font-size: 150%;
+  }
+  .market-form-imgage-container {
+    display: none;
+  }
+  /* .contact-container img {
+  } */
+  .contact-container form {
+    margin-bottom: 2rem;
+  }
+
+  /* *
+* signup page css
+* */
+  .signup-wrapper {
+    bottom: 10rem;
+  }
+  .signup-card {
+    margin: 2rem 0;
+    margin-left: 0.7rem;
+  }
+  .signup-section-2 .signup-card img {
+    left: 90%;
+    bottom: -1rem;
+    left: 80%;
+  }
+
+  /* *
+* login page css
+* */
+  .form-container h2 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .logincompimg {
+    position: absolute;
+    width: 80rem;
+    z-index: -1;
+    right: 1rem;
+    bottom: 12rem;
+  }
+  .loginphoneimg {
+    display: none;
+  }
+  .loginformlogo {
+    width: 10rem;
+    padding-top: 3rem;
+  }
+}
+
+/* media query for mobile ends above */
+
+/* general styles  */
+
+/* *
+
+*about page styles 
+
+* */
+
+/* .about-header {
+ edits made in the desktop view  
+} */
+
+.text-container h3 {
+  font-size: 80px;
+  font-weight: bold;
+}
+.image-container {
+  display: flex;
+  position: relative;
+}
+
+/* section 2  */
+.about-section-2 {
+  display: flex;
+  justify-content: center;
+  padding-left: 3rem;
+}
+
+.section-2-inner {
+  width: 100%;
+}
+
+.section-2-left-wrapper {
+  width: 100%;
+}
+.icon-div {
+  width: 100%;
+  margin: 0 0;
+  padding: 0;
+}
+.icon-div img {
+  width: 1.5rem;
+}
+.icon-div ul {
+  display: flex;
+  width: 100%;
+  justify-items: left;
+  margin: 0 0;
+  padding-left: 0;
+}
+.icon-div ul li {
+  margin: 0 0.1rem;
+}
+.icon-div ul span {
+  color: black;
+  margin: 0 0.5rem;
+}
+
+/* section 3   */
+
+.about-section-3 {
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0;
+}
+.about-section-3 h3,
+p {
+  color: aliceblue;
+}
+/* .about-section-3 h3 {
+  font-size: 300%;
+}
+.about-section-3 p {
+} */
+.about-section-3 .content-wrapper {
+  background: rgba(9, 3, 25, 1);
+  border-radius: 12px;
+}
+.about-section-3 .content-box {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+/* services pages css  */
+
+.services-header {
+  background-image: url("../images/service-banner.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+/* .service-section-3 .service-card-container {
+  edited at media queries
+} */
+.service-section-3 {
+  background-color: #f2f2f2;
+}
+.service-card-container .items {
+  height: 25rem;
+  padding: 1rem;
+  position: relative;
+  padding-top: 6rem;
+  transition: all ease-in-out 0.3s;
+  border: 2px solid #f2f2f2;
+  background-color: #ffffff;
+}
+/* .service-card-container div {
+
+} */
+.service-card-container .items:hover {
+  background-color: #dfdaed;
+  border: 2px solid #f2f2f2;
+}
+.service-card-container .items:hover .arrows {
+  background-color: red;
+}
+.service-card-container p,
+.service-card-container h3 {
+  color: #090319;
+}
+.service-card-container .arrows {
+  position: absolute;
+  top: 1rem;
+  width: 3rem;
+}
+/* .items img {
+
+}
+this is edited at the idividual media queries
+.arrows {
+
+} */
+
+.section-3 p {
+  color: black;
+}
+
+/* .block1 h3 {
+   this tag has its styles edited in the media query
+} */
+
+/* market page css  */
+
+.market-section-container {
+  background-color: #090319;
+  /* height: 30rem; */
+}
+.market-content-container .row {
+  width: 70rem;
+}
+.market-form-container {
+  background-color: white;
+}
+/* .contact-container form {
+} */
+
+.market-form-imgage-container img {
+  width: 30rem;
+}
+
+.market-form-imgage-container img {
+  height: 30rem;
+}
+/* .contact-container form .btn {
+
+} */
+
+/* *
+* signup page css
+* */
+.signup-section-2 {
+  background-color: white;
+}
+
+.signup-wrapper {
+  background: rgba(242, 242, 242, 1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  position: relative;
+  /* bottom: 10rem; */
+}
+
+.signup-section-2 h1 {
+  font-size: 100%;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+.signup-section-2 .row {
+  position: relative;
+}
+.signup-card {
+  height: 15rem;
+  background-color: rgba(255, 255, 255, 1);
+  transition: all ease-in-out 0.5s;
+}
+
+.signup-section-2 .signup-card img {
+  position: relative;
+  width: 3rem;
+  padding: 0.5rem;
+}
+.signup-card:hover {
+  background-color: #d7d7d7;
+}
+.signup-card img {
+  transition: all ease-in-out 0.5s;
+}
+.signup-card:hover img {
+  background-color: red;
+}
+.signup-section-2 .signup-card h3 {
+  position: relative;
+  top: 40%;
+  /* padding-top: 10rem;  edited in media query */
+}
+
+/* *
+* Login page css
+* */
+.cancel-container {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  background-color: transparent;
+}
+.cancel-container img {
+  width: 25px;
+}
+.login-wallpaper {
+  background-image: url("../images/loginwallpaper.png");
+  width: 100px;
+}
+.login-wrapper {
+  /* display: flex; */
+  padding: 4rem;
+}
+.login-container {
+  color: black;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  width: 30rem;
+  /* padding: 5rem; */
+}
+/* .login-container form {
+} */
+.form-container {
+  width: 100%;
+}
+.login-container p {
+  color: black;
+}
+.login-container form .btn {
+  width: 100%;
+}
+.loginbody {
+  background: radial-gradient(
+    70.4% 70.4% at 3.82% 2.39%,
+    rgba(19, 3, 63, 0.3) 0%,
+    rgba(9, 3, 25, 0.3) 100%
+  );
+}
+
+.logincompimg {
+  position: absolute;
+  /* width: 60rem; */
+  z-index: -1;
+  /* right: 5rem; */
+}
+.loginphoneimg {
+  position: absolute;
+  width: 20rem;
+  z-index: -1;
+  /* right: 15rem; */
+}

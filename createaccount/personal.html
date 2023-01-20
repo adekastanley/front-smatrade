@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="../plugins/bootstrap.min.css" />
+    <link href="./accountstyles.css" rel="stylesheet" />
+
+    <title>SMATRADE - Create a Personal account</title>
+  </head>
+  <body>
+    <header>
+      <img class="mainlogo" src="../images/logo.png" alt="" />
+      <h1>create a personal account</h1>
+    </header>
+
+    <div class="container form-wrapper">
+      <form class="create-info-wrapper">
+        <div class="step step-1 active">
+          <div class="account-toprow form-group mb-4">
+            <div class="row">
+              <div class="col-lg-6">
+                <input
+                  type="email"
+                  placeholder="enter email"
+                  class="form-control"
+                  name="val-email"
+                  id="val-email"
+                />
+              </div>
+              <div class="col-lg-6">
+                <input
+                  class="form-control"
+                  type="password"
+                  name="val-password"
+                  id="val-password"
+                />
+              </div>
+              <button class="btn val-btn col-lg-4">Validate</button>
+            </div>
+          </div>
+          <div class="page page1">
+            <div class="field-wrapper row row-1">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="surname"
+                  name="surname"
+                  placeholder="surname"
+                />
+              </div>
+              <div class="form-group col-lg-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="surname"
+                  name="surname"
+                  placeholder="first name"
+                />
+              </div>
+            </div>
+            <!-- row 1 end -->
+            <div class="field-wrapper row row-2">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-6 mt-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="middlename"
+                  name="middlename"
+                  placeholder="middle name"
+                />
+              </div>
+
+              <div class="form-group col-lg-3 mt-4">
+                <select
+                  class="form-control col-lg-3"
+                  aria-label="Default select title"
+                >
+                  <option selected>select Title</option>
+                  <option value="mr">mr</option>
+                  <option value="mrs">Mrs</option>
+                </select>
+              </div>
+
+              <div class="form-group col-lg-3">
+                <label for="date of birth" class="form-label"
+                  >date of birth</label
+                >
+                <input id="Date" class="form-control" type="date" />
+              </div>
+            </div>
+            <!-- row-2 end -->
+
+            <div class="field-wrapper row row-3">
+              <div class="from-group col-lg-6">
+                <select
+                  class="form-control"
+                  id="sor"
+                  aria-label="Default select title"
+                >
+                  <option selected>state of origin</option>
+                  <option value="Abia">Abia</option>
+                  <option value="Adamawa">Adamawa</option>
+                  <option value="Akwa Ibom">Akwa Ibom</option>
+                  <option value="Anambra">Anambra</option>
+                  <option value="Bauchi">Bauchi</option>
+                  <option value="Benue">Benue</option>
+                  <option value="Borno">Borno</option>
+                  <option value="Cross River">Cross River</option>
+                  <option value="Delta">Delta</option>
+                  <option value="Ebonyi">Ebonyi</option>
+                  <option value="Edo">Edo</option>
+                  <option value="Ekiti">Ekiti</option>
+                  <option value="Enugu">Enugu</option>
+                  <option value="fct">Fct</option>
+                  <option value="Gombe">Gombe</option>
+                  <option value="Imo">Imo</option>
+                  <option value="Jigawa">Jigawa</option>
+                  <option value="Kaduna">Kaduna</option>
+                  <option value="Kano">Kano</option>
+                  <option value="Katsina">Katsina</option>
+                  <option value="Kebbi">Kebbi</option>
+                  <option value="Kogi">Kogi</option>
+                  <option value="Kwara">Kwara</option>
+                  <option value="Lagos">Lagos</option>
+                  <option value="Nasarawa">Nasarawa</option>
+                  <option value="Niger">Niger</option>
+                  <option value="Ogun">Ogun</option>
+                  <option value="Ondo">Ondo</option>
+                  <option value="Osun">Osun</option>
+                  <option value="Oyo">Oyo</option>
+                  <option value="Plateau">Plateau</option>
+                  <option value="Rivers">Rivers</option>
+                  <option value="Sokoto">Sokoto</option>
+                  <option value="Taraba">Taraba</option>
+                  <option value="Yobe">Yobe</option>
+                  <option value="Zamfara">Zamfara</option>
+                  <option value="Kebbi">Kebbi</option>
+                </select>
+              </div>
+
+              <div class="form-group col-lg-6">
+                <input
+                  type="text"
+                  id="localgovernment"
+                  class="form-control"
+                  name="localgovernment"
+                  placeholder="Local government"
+                />
+              </div>
+            </div>
+            <!-- row-3 end  -->
+
+            <div class="field-wrapper row row-4">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-6">
+                <select
+                  class="form-control"
+                  id="nationality"
+                  aria-label="Default select nationality"
+                >
+                  <option selected>nationality</option>
+                  <option value="mr">nigeria</option>
+                  <option value="mrs">ghana</option>
+                </select>
+              </div>
+              <div class="col-lg-6"></div>
+            </div>
+            <!-- row-4 end -->
+
+            <div class="field-wrapper row row-5">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-6">
+                <select
+                  class="form-control"
+                  id="id-type"
+                  aria-label="Default select id type"
+                >
+                  <option selected>id type</option>
+                  <option value="mr">drivers lincence</option>
+                  <option value="mrs">voter card</option>
+                </select>
+              </div>
+              <div class="form-group col-lg-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="id-number"
+                  name="localgovernment"
+                  placeholder="id number"
+                />
+              </div>
+            </div>
+            <!-- row-5 end -->
+
+            <div class="field-wrapper row row-6">
+              <!-- this is used to help with the placement of fields -->
+
+              <div class="col-lg-3 form-group">
+                <label for="exampleInputPassword1" class="form-label"
+                  >issue date</label
+                >
+                <input id="id-Date" class="form-control" type="date" />
+              </div>
+              <div class="col-lg-3 form-group">
+                <label for="exampleInputPassword1" class="form-label"
+                  >expirey date</label
+                >
+                <input id="id-expiry" class="form-control" type="date" />
+              </div>
+              <div class="col-lg-6"></div>
+            </div>
+            <!-- row-6 end -->
+
+            <div class="field-wrapper row row-7">
+              <!-- this is used to help with the placement of fields -->
+              <div class="col-lg-12">
+                <input
+                  id="address"
+                  class="form-control"
+                  type="text"
+                  placeholder="residential address"
+                />
+              </div>
+            </div>
+            <!-- row-7 end -->
+
+            <div class="field-wrapper row row-8">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-6">
+                <input
+                  id="address"
+                  class="form-control"
+                  type="tel"
+                  placeholder="phone number"
+                />
+              </div>
+              <div class="form-group col-lg-6">
+                <input
+                  id="address"
+                  class="form-control"
+                  type="tel"
+                  placeholder="business number"
+                />
+              </div>
+            </div>
+            <!-- row-8 end -->
+
+            <div class="field-wrapper row row-9">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-4">
+                <select
+                  class="form-control"
+                  id="occupation"
+                  aria-label="Default select occupation"
+                >
+                  <option selected>occupation</option>
+                  <option value="driver">driver</option>
+                  <option value="pilot">pilot</option>
+                </select>
+              </div>
+              <div class="col-lg-2"></div>
+              <div class="col-lg-6"></div>
+            </div>
+            <!-- row-9 end -->
+
+            <div class="field-wrapper row row-10">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-6">
+                <input
+                  id="mmn"
+                  class="form-control"
+                  type="text"
+                  placeholder="Mothers maidian name"
+                />
+              </div>
+              <div class="form-group col-lg-6">
+                <input
+                  id="nok"
+                  class="form-control"
+                  type="text"
+                  placeholder="Next of kin"
+                />
+              </div>
+            </div>
+            <!-- row-10 end -->
+
+            <div class="field-wrapper row row-11">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-12">
+                <input
+                  id="purpose"
+                  class="form-control"
+                  type="text"
+                  placeholder="Purpose for opening account"
+                />
+              </div>
+            </div>
+            <!-- row-11 end -->
+
+            <div class="field-wrapper row row-12">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-6">
+                <input
+                  id="soi"
+                  class="form-control"
+                  type="text"
+                  placeholder="Source of income"
+                />
+              </div>
+              <div class="form-group col-lg-6">
+                <input
+                  id="investment-amount"
+                  class="form-control"
+                  type="text"
+                  placeholder="initial investment amount"
+                />
+              </div>
+            </div>
+            <!-- row-12 end -->
+            <div class="field-wrapper row row-13">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-3">
+                <select
+                  class="form-control"
+                  id="bankname"
+                  aria-label="Default select occupation"
+                >
+                  <option selected>select bank</option>
+                  <option value="gtb">GT bank</option>
+                  <option value="wema">Wema bank</option>
+                  <option value="access">Access bank</option>
+                </select>
+              </div>
+              <div class="col-lg-3"></div>
+              <div class="col-lg-6"></div>
+            </div>
+            <!-- row-13 end -->
+            <div class="field-wrapper row row-14">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-6">
+                <input
+                  id="soi"
+                  class="form-control"
+                  type="text"
+                  placeholder="Branch location"
+                />
+              </div>
+              <div class="col-lg-6"></div>
+            </div>
+            <!-- row-14 end -->
+
+            <div class="field-wrapper row row-15">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-6">
+                <input
+                  id="account-name"
+                  class="form-control"
+                  type="text"
+                  placeholder="account name"
+                />
+              </div>
+              <div class="form-group col-lg-6">
+                <input
+                  id="account-number"
+                  class="form-control"
+                  type="text"
+                  placeholder="account number"
+                />
+              </div>
+            </div>
+            <!-- row-15 end -->
+
+            <div class="field-wrapper row row-16">
+              <!-- this is used to help with the placement of fields -->
+              <div class="form-group col-lg-6">
+                <input
+                  id="opening-date"
+                  class="form-control"
+                  type="text"
+                  placeholder="opening date"
+                />
+              </div>
+              <div class="form-group col-lg-6">
+                <input
+                  id="bvn"
+                  class="form-control"
+                  type="text"
+                  placeholder="bvn"
+                />
+              </div>
+            </div>
+            <!-- row-16 end -->
+          </div>
+          <!-- below div ends step-1 -->
+          <div class="row mulstep-btn-cont">
+            <div class="btn btn-danger btn-right btn-next">Next</div>
+          </div>
+        </div>
+
+        <div class="step step-2">
+          <div class="field-wrapper row row-16">
+            <!-- this is used to help with the placement of fields -->
+            <div class="form-group col-lg-6">
+              <input
+                id="opening-date"
+                class="form-control"
+                type="text"
+                placeholder="opening date"
+              />
+            </div>
+            <div class="form-group col-lg-6">
+              <input
+                id="bvn"
+                class="form-control"
+                type="text"
+                placeholder="bvn"
+              />
+            </div>
+            <div class="row mulstep-btn-cont">
+              <div class="btn btn-left btn-prev">Previous</div>
+              <div class="btn btn-danger btn-right btn-submit">Submit</div>
+            </div>
+            <!-- below div ends step-2 -->
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./account.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.15.0/firebase.js"></script>
+
+    <script src="./forms.js"></script>
+    <script src="../bundle.js"></script>
+  </body>
+</html>
