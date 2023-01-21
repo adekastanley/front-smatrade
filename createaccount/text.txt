@@ -1,0 +1,19 @@
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDXWNrFVg08GICClhqHiA69P2zPD1-4tKo",
+    authDomain: "smatrade-db.firebaseapp.com",
+    projectId: "smatrade-db",
+    storageBucket: "smatrade-db.appspot.com",
+    messagingSenderId: "650758148477",
+    appId: "1:650758148477:web:046c0579db78136a577c14"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>

@@ -1,0 +1,207 @@
+body {
+  background-color: rgba(255, 255, 255, 1);
+}
+header {
+  height: 30rem;
+
+  background: radial-gradient(
+    70.4% 70.4% at 3.82% 2.39%,
+    #13033f 0%,
+    #090319 100%
+  );
+}
+
+.mainlogo {
+  width: 15rem;
+}
+
+/* for desktop view  */
+@media only screen and (min-device-width: 768px) {
+  header h1 {
+    color: white;
+    position: relative;
+    left: 3rem;
+    top: 3rem;
+    font-size: 70px;
+    width: 50%;
+  }
+  .mulstep-btn-cont .btn {
+    width: 10%;
+  }
+  /* these styles are for the download resource page.... desktop view  */
+  .card-wrapper {
+    background-color: #ffffff;
+    margin: 2rem;
+    height: 15rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 13rem;
+  }
+  .create-info-wrapper .row {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+  }
+  .form-label {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* for mobile view  */
+@media only screen and (max-device-width: 768px) {
+  header h1 {
+    color: white;
+    position: relative;
+    left: 3rem;
+    top: 3rem;
+    font-size: 60px;
+    width: 70%;
+  }
+  .mulstep-btn-cont .btn {
+    width: 30%;
+  }
+
+  /* these styles are for the download resource page.... mobile view  */
+  .card-wrapper {
+    background-color: #ffffff;
+    margin: 2rem;
+    /* height: 15rem; */
+    padding: 1rem;
+    /* 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* width: 13rem; */
+  }
+  .create-info-wrapper .row {
+    display: flex;
+    justify-content: center;
+  }
+  .form-label {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* media query ends here  */
+.create-info-wrapper {
+  position: relative;
+  bottom: 10rem;
+
+  background-color: #f2f2f2;
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 40px;
+}
+
+.create-info-wrapper div {
+  margin: 0.2rem 0;
+}
+
+/* these styles are for the download resource page.... general  */
+header .resource-logo-container {
+  background-color: red;
+  position: relative;
+}
+.resource-header h1 {
+  padding-top: 5rem;
+}
+header .resource-logo-container .mainlogo {
+  margin-top: 1rem;
+  position: absolute;
+  left: 2rem;
+}
+
+.resource {
+  height: 12rem;
+  padding-top: 4rem;
+}
+.card-wrapper {
+  transition: all ease 0.3s;
+}
+.card-wrapper:hover {
+  background-color: #d7d7d7;
+}
+.create-info-wrapper .row .create-info-wrapper {
+  /* margin: 2rem; */
+}
+.card-wrapper h3 {
+  font-size: 100%;
+}
+.card-wrapper img {
+  width: 40px;
+  padding-bottom: 3rem;
+}
+
+.val-btn {
+  background-color: #13033f;
+  color: #f2f2f2;
+  width: 6rem;
+  height: 3rem;
+  margin-right: auto;
+  margin-left: 1rem;
+}
+.val-btn:hover {
+  background-color: #13033fee;
+  color: #f2f2f2;
+}
+
+/* multi step styles */
+
+.mulstep-btn-cont {
+}
+.mulstep-btn-cont .btn {
+  color: #f2f2f2;
+}
+.mulstep-btn-cont .btn-left {
+  margin-right: auto;
+  margin-left: 0.1rem;
+  background-color: #8b8989;
+}
+.mulstep-btn-cont .btn-right {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+}
+
+/* these styles are for the download resource page.... general   */
+
+.resource a {
+  width: 2.6rem;
+  height: 3rem;
+  transition: all ease 0.2s;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+.resource .button-icon {
+  position: relative;
+  top: 10%;
+  width: 2rem;
+  height: 5rem;
+  align-content: center;
+}
+.resource:hover {
+  background-color: #d7d7d7;
+}
+.resource:hover a {
+  background-color: #ee2629;
+}
+.hide-resource {
+  display: none;
+}
+.show-resource {
+  display: block;
+}
